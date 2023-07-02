@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="display"></p>
+</body>
+<script>
+    let display = document.getElementById('display');
+    fetch('/read')
+        .then(response => {
+            const reader = response.body.getReader();
+
+            function processResponse(result) {
+                if (result.done) {
+                    // 接收完畢
+                    return;
+                }
+
+                const chunk = new TextDecoder("utf-8").decode(result.value);
+
+                if (chunk.includes('\n')) {
+                    let newLine = document.createElement("br");
+                    display.append(newLine)
+                } else {
+                    display.append(chunk)
+                }
+
+                // 遞迴接收下一區塊
+                return reader.read().then(processResponse);
+            }
+
+            return reader.read().then(processResponse);
+        })
+        .catch(error => {
+            console.error(error);
+        });
+</script>
+</html>
