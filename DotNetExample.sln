@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReadableStreams", "ReadableStreams\ReadableStreams.csproj", "{7D82FBB2-181F-4799-8133-3B2B6944228D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DITest", "DITest\DITest.csproj", "{304D0DB2-17DE-4420-9A5B-76E8FA570611}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{7D82FBB2-181F-4799-8133-3B2B6944228D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7D82FBB2-181F-4799-8133-3B2B6944228D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7D82FBB2-181F-4799-8133-3B2B6944228D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{304D0DB2-17DE-4420-9A5B-76E8FA570611}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{304D0DB2-17DE-4420-9A5B-76E8FA570611}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{304D0DB2-17DE-4420-9A5B-76E8FA570611}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{304D0DB2-17DE-4420-9A5B-76E8FA570611}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
