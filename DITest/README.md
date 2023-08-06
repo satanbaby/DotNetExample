@@ -5,7 +5,7 @@ builder.Services.AddScoped<Person>();
 builder.Services.AddScoped<Taiwanese>();
 builder.Services.AddSingleton<PersonOnSingleton>();
 ```
-### 每次呼叫 API，都只會建構有使用到的服務，已註冊沒使用到的不會被建構
+### 每次呼叫 API，都只會建構有使用到的服務，已註冊且沒使用到的服務不會被建構
 ```http request
 ### 呼叫後只建構 Person，重複呼叫重複建構
 GET https://localhost:7182/person

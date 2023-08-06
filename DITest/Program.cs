@@ -24,8 +24,5 @@ class Taiwanese
 
 class PersonOnSingleton
 {
-    public PersonOnSingleton()
-    {
-        Console.WriteLine($"Singleton Init Person");
-    }
+    public PersonOnSingleton() => Console.WriteLine($"Singleton Init Person");
 }
